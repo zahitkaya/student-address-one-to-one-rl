@@ -23,5 +23,6 @@ public class Address {
 
     String asdadsasds;
     String asdads;
+    String sasa;
 
 }
