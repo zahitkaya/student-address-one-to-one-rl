@@ -1,0 +1,21 @@
+version: '3.8'
+services:
+  app:
+    image: app:${SERVICE_IMAGE_TAG}
+    container_name: app
+    environment:
+      - TZ
+      - SERVER_PORT
+      - RESTART_POLICY
+      - SERVICE_IMAGE_TAG
+      - API_BASE_PATH
+      - OPENAPI_TITLE
+      - OPENAPI_DESCRIPTION
+      - OPENAPI_VERSION
+      - OPENAPI_TERMS-OF-SERVICE-URL
+      - OPENAPI_LICENCE
+      - OPENAPI_LICENCE_URL
+      - DATASOURCE_USERNAME
+      - DATASOURCE_PASSWORD
+    ports:
+    - ${SERVER_PORT}:${SERVER_PORT}
