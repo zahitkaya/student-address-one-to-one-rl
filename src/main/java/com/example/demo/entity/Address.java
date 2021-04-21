@@ -22,5 +22,6 @@ public class Address {
     int number;
 
     String asdadsasds;
+    String asdads;
 
 }
